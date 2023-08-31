@@ -10,16 +10,15 @@ st.image(image, caption='Max Verstappen')
 
 
 st.text_input("¿Cuál es tu nombre?", key="name")
-
-# You can access the value at any point with:
 st.session_state.name
+
 st.text('¡Hola '+st.session_state.name+' !') 
+'Hola cómo estás? ',st.session_state.name
 
 df = pd.read_csv('https://raw.githubusercontent.com/LilianaC/streamlit3/main/Datos%20F1%20Dutch%20GP%20-%20Sheet1.csv')
 
 if st.checkbox('Show dataframe'):
     df
-
 
 
 option = st.selectbox(
