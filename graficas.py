@@ -1,4 +1,6 @@
+import pandas as pd
 import streamlit as st
+
 st.title("Gráficas de Pandas")
 st.header('Datos de la fórmula 1', divider='rainbow')
 
