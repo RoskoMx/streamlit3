@@ -20,6 +20,8 @@ option = st.selectbox(
 
 'Tu selección: ', option
 
+df.loc[df['DRIVER'] == option]
+
 
 st.line_chart(
     df,
