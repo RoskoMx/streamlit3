@@ -7,6 +7,6 @@ df = pd.read_csv('https://raw.githubusercontent.com/LilianaC/streamlit3/main/Dat
 
 st.line_chart(
     df,
-    x = 'LAP',
-    y = 'AVG SPEED'
+    x = 'AVG SPEED',
+    y = 'LAP'
 )
