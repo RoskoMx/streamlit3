@@ -1,7 +1,8 @@
 import pandas as pd
 import streamlit as st
-
+st.header('This is a header with a divider', divider='rainbow')
 st.title("Gráficas de Pandas")
+
 st.text_input("Your name", key="name")
 
 # You can access the value at any point with:
