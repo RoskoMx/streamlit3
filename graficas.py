@@ -1,7 +1,16 @@
 import pandas as pd
 import streamlit as st
-st.header('This is a header with a divider', divider='rainbow')
-st.title("Gráficas de Pandas")
+from PIL import Image
+
+st.header('Gráficas utilizando Pandas', divider='rainbow')
+st.title("Resultados del Grand Prix de Países Bajos")
+
+image = Image.open('Verstappen-pole-lap-Zandvoort-Netherlands-2021.jpg')
+st.image(image, caption='Max Verstappen')
+
+
+
+
 
 st.text_input("Your name", key="name")
 
