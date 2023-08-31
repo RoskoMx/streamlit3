@@ -1,19 +1,13 @@
-import pandas as pd
 import streamlit as st
+import pandas as pd
 
-st.title("Gráficas de Pandas")
-st.text_input("Your name", key="name")
+df = pd.DataFrame({
+    'first column': [1, 2, 3, 4],
+    'second column': [10, 20, 30, 40]
+    })
 
-# You can access the value at any point with:
-st.session_state.name
+option = st.selectbox(
+    'Which number do you like best?',
+     df['first column'])
 
-df = pd.read_csv('https://raw.githubusercontent.com/LilianaC/streamlit3/main/Datos%20F1%20Dutch%20GP%20-%20Sheet1.csv')
-
-if st.checkbox('Show dataframe'):
-    df
-
-st.line_chart(
-    df,
-    x = 'AVG SPEED',
-    y = 'LAP'
-)
+'You selected: ', option
